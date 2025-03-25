@@ -46,11 +46,11 @@
 
 .light {
   --bg-color: #ffffff;
-  --second-bg-color: #C94C16;
+  --second-bg-color: rgb(0, 143, 154);
   
   --text-color: #000000;
-  --second-text-color: #FF4D00;
-  --card-bg-color: hsla(18, 80%, 44%, 1);
+  --second-text-color: rgb(1, 27, 161);
+  --card-bg-color: rgb(0, 143, 154);
 
   --highlight-color: rgba(0, 0, 0, 0.25);
   --switch-bg-url: url("./img/sun.svg");
@@ -442,7 +442,7 @@ img.balls {
 }
 
 .line {
-  border: 2px #FF4D00 solid;
+  border: 2px rgb(0, 143, 154) solid;
   width: 17rem;
   margin-bottom: 1rem;
 }
@@ -498,7 +498,7 @@ img.balls {
 
 .card:hover {
   cursor: pointer;
-  background-color: #FF4D00;
+  background-color: rgb(0, 64, 69);
   transform: translateY(-10px);
 }
 
