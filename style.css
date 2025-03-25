@@ -13,10 +13,10 @@
   font-size: 62.5%;
 
   --bg-color: #000000;
-  --second-bg-color: #C94C16;
+  --second-bg-color: rgb(40, 241, 255);
   --text-color: #ffffff;
-  --second-text-color: #FF4D00;
-  --card-bg-color: hsla(18, 80%, 44%, 0.5);
+  --second-text-color: rgb(40, 241, 255);
+  --card-bg-color: rgb(2, 218, 234);
 
   --first-font: 'Lato', sans-serif;
   --second-font: 'Inter', sans-serif;
@@ -69,7 +69,7 @@
   --button-text-color-hover: #000000;
 
   --bg-contact: url("./img/bg-contact-white.png");
-  --border-form: 2px solid hsla(18, 80%, 44%, 1);
+  --border-form: 2px solid rgb(0, 143, 154);
   --bg-form: rgba(255, 255, 255, 0.726);
 
   --color-social-media: #C94C16;
