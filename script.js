@@ -267,5 +267,18 @@ const aboutSection = document.querySelector('.about');
 
 // Função para verificar se a seção está visivel na tela
 function checkAboutVisibility() {
-    
+    const rect = aboutSection.getBoundingClientRect();
+    const windowHeight = window.windowHeight || document.documentElement.clientHeight;
+
+    // Verificar se a seção está dentro da área visivel da tela
+    if (rect.top <= windowHeight * 0.75 && rect.bottom >= 0) {
+        aboutSection.classList.add('visible'); //Adiciona a classe "visivel"
+        window.removeEventListener('scroll', checkAboutVisibility); //Remove o listener após a animação
+    }
 }
+
+// Adiciona um listener para o evento de scroll
+window.addEventListener('scroll', checkAboutVisibility);
+
+// Verificar a visibilidade ao carregar a pagina (caso a seção jaesteja visivel)
+checkAboutVisibility();
